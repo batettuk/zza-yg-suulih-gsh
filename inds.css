@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand {
+  position: relative;
+  cursor: pointer;
+}
+
+.fingers {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.finger {
+  width: 70px;
+  height: 200px;
+  border-radius: 40px;
+  background: #ffdc5d;
+  transition: 0.3s ease-in-out;
+}
+
+.hand:hover .finger2 {
+  height: 500px;
+}
+
+.lower {
+  width: 280px;
+  height: 100px;
+  background: #ffdc5d;
+  border-radius: 30px 30px 500px 500px;
+  transform: translateY(-50px);
+}
+
+.thumb {
+  width: 70px;
+  height: 170px;
+  border-radius: 40px;
+  background: #ffdc5d;
+  position: absolute;
+  bottom: 60px;
+  transform: rotate(-41deg) translateX(-15px) translateY(-41px);
+}
